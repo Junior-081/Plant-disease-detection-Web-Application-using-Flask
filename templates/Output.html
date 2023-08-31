@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Prediction</title>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+
+    </head>
+    <body>
+        <center>
+            <div class='cont'>
+               <div class='cont' >
+
+                    <h2>Prédiction d'une image donnée </h2>
+                </div>
+            </div>
+
+
+            <h3> <br> Prédiction : <span>{{data[0]}}</span> </h3>
+
+            <img src="{{url_for('load_img')}}" alt='img'>
+            <a href="/" class='btn'>Retour</a>
+
+        </center>
+
+     <div class="footer">
+        <p><br>| Designed by | Junior Kaningini | 2023 | </p>
+     </div>
+
+
+    </body>
+</html>
